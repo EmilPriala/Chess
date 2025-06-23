@@ -231,11 +231,11 @@ namespace ChessLogic
             return false;
         }
 
-        public bool CancaptureEnPassant(Player player)
+        public bool CanCaptureEnPassant(Player player)
         {
             Position skipPos = GetPawnSkipPosition(player.Opponent());
 
-            if (skipPos != null)
+            if (skipPos == null)
             {
                 return false;
             }

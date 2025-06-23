@@ -27,9 +27,10 @@ namespace ChessLogic
         {
             return newType switch
             {
-                PieceType.King => new Knight(color),
+                PieceType.Knight => new Knight(color),
                 PieceType.Rook => new Rook(color),
                 PieceType.Bishop => new Bishop(color),
+                PieceType.Queen => new Queen(color),
                 _ => new Queen(color)
             };
         }
