@@ -128,7 +128,7 @@ namespace ChessLogic
 
         private void AddEnPassant(Board board, Player currentPlayer)
         {
-            if (!board.CancaptureEnPassant(currentPlayer))
+            if (!board.CanCaptureEnPassant(currentPlayer))
             {
                 sb.Append('-');
                 return;
